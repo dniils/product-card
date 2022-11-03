@@ -1,0 +1,50 @@
+.h1-title {
+  font-size: var(--fs-h1);
+  color: var(--gray-300);
+  font-weight: 700;
+  line-height: var(--lh-xl);
+}
+
+.h2-title {
+  font-size: var(--fs-h2);
+  color: var(--gray-300);
+  font-weight: 500;
+  line-height: var(--lh-l);
+}
+
+.h3-title {
+  font-size: var(--fs-h3);
+  color: var(--gray-300);
+  font-weight: 500;
+  line-height: var(--lh-m);
+}
+
+ol {
+  font-size: var(--fs-s);
+  color: var(--gray-200);
+  line-height: var(--lh-s);
+}
+
+.content__description {
+  font-size: var(--fs-s);
+  color: var(--gray-200);
+  line-height: var(--lh-s);
+}
+
+// Placeholder for input
+// Chrome, Firefox, Opera, Safari 10.1+
+::placeholder {
+  color: var(--gray-100);
+  font-size: var(--fs-s);
+  opacity: 1; /* Firefox */
+}
+
+// Internet Explorer 10-11
+:-ms-input-placeholder {
+  color: var(--gray-100);
+}
+
+// Microsoft Edge
+::-ms-input-placeholder {
+  color: var(--gray-100);
+}
