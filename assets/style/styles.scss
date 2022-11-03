@@ -14,7 +14,6 @@
   position: absolute;
   // height: 100vh;
   min-height: 100%;
-  width: 100%;
   background-color: var(--gray-0);
 }
 
@@ -167,13 +166,7 @@
     display: flex;
 
     &__item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 267px;
-      height: 73px;
-      border-radius: 20px 20px 0px 0px;
-      background-color: var(--gray-100);
+      text-align: center;
 
       &:hover {
         cursor: pointer;
