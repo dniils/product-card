@@ -1,8 +1,13 @@
-const tabs = document.querySelectorAll(".tabs__item");
+const tabs = document.querySelectorAll(".tab");
 const contents = document.querySelectorAll(".content");
+const chevron = document.querySelector("fa-solid");
 
 function removeActive(el) {
   el.classList.remove("active");
+}
+
+function toggleActive(el) {
+  el.classList.toggle("active");
 }
 
 tabs.forEach((el, index) => {

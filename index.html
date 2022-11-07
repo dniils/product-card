@@ -5,29 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style/styles.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Product Card</title>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="container">
-        <div class="tabs">
-          <div class="tabs__item active">
-            <h2 class="h2-title tabs__item-title">Горный велосипед</h2>
-          </div>
-          <div class="tabs__item">
-            <h2 class="h2-title tabs__item-title">Женский велосипед</h2>
-          </div>
+    <div class="container">
+      <div class="tab-wrapper">
+        <div class="tab active">
+          <h2 class="h2-title tab-title">Горный велосипед</h2>
+          <i class="fa-solid fa-chevron-up"></i>
+          <i class="fa-solid fa-chevron-down"></i>
         </div>
-
         <div class="content active">
           <div class="content__main">
-            <div class="content__image">
-              <img
-                class="image-bike"
-                src="./assets/images/image_1.jpg"
-                alt="STELS Mountain Bike"
-              />
-            </div>
+            <img
+              class="content__image"
+              src="./assets/images/image_1.jpg"
+              alt="STELS Mountain Bike"
+            />
             <div class="content__info">
               <div class="content__header">
                 <h1 class="h1-title">
@@ -50,7 +51,7 @@
           </div>
 
           <div class="content__body">
-            <div class="content__separator"></div>
+            <hr class="content__separator" />
 
             <div class="content__features">
               <h3 class="h3-title">Характеристики</h3>
@@ -63,34 +64,40 @@
                 <li class="content__features-item">Покрышки 26х1,95"</li>
               </ol>
               <h3 class="h3-title">Добавить характеристику</h3>
-              <div class="content__input-wrapper">
+              <form class="content__input-wrapper">
                 <input
+                  required
                   class="content__input"
                   type="text"
                   placeholder="Алюминиевый сплав"
                 />
-                <button class="btn-primary btn-add">Добавить</button>
-              </div>
+                <button class="btn-primary">Добавить</button>
+              </form>
             </div>
 
             <div class="content__confirm">
               <div class="content__confirm-buttons">
-                <button class="btn-primary btn-ok">Окей</button>
-                <button class="btn-primary btn-cancel">Отмена</button>
+                <button class="btn-primary">Окей</button>
+                <button class="btn-cancel">Отмена</button>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
+      <div class="tab-wrapper">
+        <div class="tab">
+          <h2 class="h2-title tab-title">Женский велосипед</h2>
+          <i class="fa-solid fa-chevron-up"></i>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
         <div class="content">
           <div class="content__main">
-            <div class="content__image">
-              <img
-                class="image-bike"
-                src="./assets/images/image_2.jpg"
-                alt="Women's SCHWINN bike"
-              />
-            </div>
+            <img
+              class="content__image"
+              src="./assets/images/image_2.jpg"
+              alt="Women's SCHWINN bike"
+            />
             <div class="content__info">
               <div class="content__header">
                 <h1 class="h1-title">Велосипед SCHWINN Traveler women 2022</h1>
@@ -110,7 +117,7 @@
           </div>
 
           <div class="content__body">
-            <div class="content__separator"></div>
+            <hr class="content__separator" />
 
             <div class="content__features">
               <h3 class="h3-title">Характеристики</h3>
@@ -123,26 +130,29 @@
                 <li class="content__features-item">7 скоростей</li>
               </ol>
               <h3 class="h3-title">Добавить характеристику</h3>
-              <div class="content__input-wrapper">
+              <form class="content__input-wrapper">
                 <input
+                  required
                   class="content__input"
                   type="text"
                   placeholder="Алюминиевый сплав"
                 />
                 <button class="btn-primary btn-add">Добавить</button>
-              </div>
+              </form>
             </div>
 
             <div class="content__confirm">
               <div class="content__confirm-buttons">
-                <button class="btn-primary btn-ok">Окей</button>
-                <button class="btn-primary btn-cancel">Отмена</button>
+                <button class="btn-primary">Окей</button>
+                <button class="btn-cancel">Отмена</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="./tabs.js"></script>
+
+    <script src="./assets/js/tabs.js"></script>
+    <script src="./assets/js/form.js"></script>
   </body>
 </html>
