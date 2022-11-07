@@ -245,14 +245,14 @@ body {
 
       &__main {
         flex-direction: column;
-        display: flex;
         padding: 0;
       }
 
       &__image {
         transform: translateX(0);
         margin-bottom: 20px;
-        height: 192px;
+        max-width: 100%;
+        height: auto;
       }
 
       &__body {
@@ -297,29 +297,5 @@ body {
 
   .separator {
     margin: 30px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .tab-wrapper {
-    .content__image {
-      height: 172px;
-    }
-  }
-}
-
-@media (max-width: 320px) {
-  .tab-wrapper {
-    .content__image {
-      height: 158px;
-    }
-  }
-}
-
-@media (max-width: 310px) {
-  .tab-wrapper {
-    .content__image {
-      height: 126px;
-    }
   }
 }
