@@ -1,0 +1,2 @@
+const tabs=document.querySelectorAll(".tab"),contents=document.querySelectorAll(".content"),chevron=document.querySelector("fa-solid");function removeActive(e){e.classList.remove("active")}function toggleActive(e){e.classList.toggle("active")}tabs.forEach(((e,t)=>{e.addEventListener("click",(()=>{contents.forEach(removeActive),tabs.forEach(removeActive),e.classList.add("active"),contents[t].classList.add("active")}))}));
+//# sourceMappingURL=index.8cdff5b7.js.map

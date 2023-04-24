@@ -1,0 +1,2 @@
+const forms=document.querySelectorAll(".content__input-wrapper");function addItem(e,t){const n=document.createElement("li");n.classList.add("content__features-item"),n.textContent=e,t.appendChild(n)}forms.forEach((e=>{e.addEventListener("submit",(e=>{e.preventDefault();const t=document.querySelector(".active .content__input"),n=document.querySelector(".active .content__features-items");t.value.trim()&&addItem(t.value.trim(),n),t.value=""}))}));
+//# sourceMappingURL=index.ecf586b9.js.map
